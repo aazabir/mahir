@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Mahir Shahriyar | Agricultural Engineer, BRRI</title>
+<meta name="description" content="Academic portfolio of Md. Mahir Shahriyar, Scientific Officer at the Bangladesh Rice Research Institute. Farm mechanization, rice transplanting, weeders, solar powered machinery and biomass energy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ea; --surface:#ffffff; --ink:#1c2a23; --muted:#5b6b62; --line:#ddd8c8;
+  --brand:#1f4d3a; --brand-ink:#ffffff; --accent:#b8791f; --soft:#e6efe8;
+  --radius:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#111915; --surface:#18221d; --ink:#e8efe9; --muted:#9bb0a4; --line:#2a3830;
+    --brand:#6fbf95; --brand-ink:#0d1712; --accent:#e0a74c; --soft:#1f2e26;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111915; --surface:#18221d; --ink:#e8efe9; --muted:#9bb0a4; --line:#2a3830;
+  --brand:#6fbf95; --brand-ink:#0d1712; --accent:#e0a74c; --soft:#1f2e26;
+}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.brand{font-family:Fraunces,serif;font-weight:600;text-decoration:none;color:var(--ink)}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto}
+.nav li a{display:block;padding:6px 10px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:14px;white-space:nowrap}
+.nav li a:hover,.nav li a.on{background:var(--soft);color:var(--brand)}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:15px;flex:none}
+
+/* hero */
+.hero{padding:64px 0 40px}
+.hero .grid{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.hero .role{font-size:1.1rem;color:var(--muted);margin:0 0 22px}
+.hero .lede{max-width:56ch;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--brand)}
+.btn.primary{background:var(--brand);color:var(--brand-ink)}
+.btn.ghost{color:var(--brand);background:transparent}
+.btn:hover{transform:translateY(-1px)}
+.portrait{aspect-ratio:4/5;border-radius:22px;background:linear-gradient(160deg,var(--brand),#0f2a20);display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid var(--line)}
+.portrait img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.portrait span{font-family:Fraunces,serif;font-size:4.5rem;color:#fff;opacity:.9}
+.portrait::after{content:"";position:absolute;inset:auto -20% -30% auto;width:70%;aspect-ratio:1;border-radius:50%;border:2px solid rgba(255,255,255,.18);box-shadow:0 0 0 24px rgba(255,255,255,.05),0 0 0 48px rgba(255,255,255,.04)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:8px 0 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--brand);line-height:1}
+.stat small{color:var(--muted)}
+
+/* sections */
+section{padding:52px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:22px}
+.sec-head h2{font-size:1.8rem}
+.sec-head::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{background:var(--soft);color:var(--brand);padding:4px 11px;border-radius:99px;font-size:13px;font-weight:500}
+
+/* timeline-like rows */
+.rows{display:grid;gap:12px}
+.row{display:grid;grid-template-columns:90px 1fr;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px}
+.row .yr{font-family:Fraunces,serif;color:var(--accent);font-weight:600}
+.row h3{font-size:1.05rem;margin-bottom:2px}
+.row p{margin:0;color:var(--muted);font-size:15px}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.badge.pi{background:var(--accent);color:#fff}
+.badge.ci{background:var(--soft);color:var(--brand)}
+
+/* filters */
+.chips{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:99px;cursor:pointer;font:inherit;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+
+/* publications */
+.pubs{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:p}
+.pubs li{counter-increment:p;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px 14px 56px;position:relative}
+.pubs li::before{content:counter(p);position:absolute;left:16px;top:13px;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--brand);display:grid;place-items:center;font-weight:600;font-size:13px}
+.sub{font-weight:600;margin:26px 0 10px;color:var(--muted);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+
+@media (max-width:760px){
+  .hero .grid{grid-template-columns:1fr}
+  .portrait{max-width:260px;order:-1}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:4px}
+  .brand{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">M. Mahir Shahriyar</a>
+    <ul id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#training">Training</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme" id="theme" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+
+  <div class="hero">
+    <div class="grid">
+      <div>
+        <div class="eyebrow">Agricultural Engineer and Researcher</div>
+        <h1>Md. Mahir Shahriyar</h1>
+        <p class="role">Scientific Officer, Farm Machinery and Postharvest Technology Division<br>Bangladesh Rice Research Institute (BRRI), Gazipur</p>
+        <p class="lede">I design and test machines that make rice farming easier, from transplanters and weeders to solar powered threshers and biomass briquetting systems, with a growing interest in climate data for rice.</p>
+        <div class="btns">
+          <a class="btn primary" href="#research">View research</a>
+          <a class="btn ghost" href="#publications">Publications</a>
+          <a class="btn ghost" id="cvBtn" href="#" hidden>Download CV</a>
+        </div>
+      </div>
+      <div class="portrait" id="portrait"><span>MS</span></div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <section id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="card">
+      <p style="margin-top:0">I am an agricultural engineer at BRRI, working on farm mechanization and postharvest technology for rice. My work covers the design, fabrication and field evaluation of small and medium machines, including rice transplanting, mechanical weeding, harvesting, threshing, milling and the use of rice husk as an energy source.</p>
+      <p style="margin-bottom:0">More recently I have joined climate focused work on gridded precipitation and temperature data and on rice exposure to heat stress in Bangladesh under different scenarios.</p>
+      <div class="tags" id="interests"></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="sec-head"><h2>Education</h2></div>
+    <div class="rows" id="eduRows"></div>
+  </section>
+
+  <section id="research">
+    <div class="sec-head"><h2>Research programmes</h2></div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by role">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="PI" aria-pressed="false">Principal Investigator</button>
+      <button class="chip" data-f="CI" aria-pressed="false">Co-Investigator</button>
+    </div>
+    <div class="rows" id="projRows"></div>
+
+    <div class="sub">Technology developed</div>
+    <div class="card"><b id="techTitle"></b><div style="color:var(--muted);font-size:15px">As Co-Investigator</div></div>
+  </section>
+
+  <section id="publications">
+    <div class="sec-head"><h2>Publications</h2></div>
+    <div class="sub" style="margin-top:0">International journals, as co-author</div>
+    <ol class="pubs" id="pubIntl"></ol>
+    <div class="sub">Other international and national journals, as co-author</div>
+    <ol class="pubs" id="pubOther"></ol>
+    <div class="sub">Bulletins</div>
+    <div class="card" id="bulletins"></div>
+  </section>
+
+  <section id="training">
+    <div class="sec-head"><h2>Training</h2></div>
+    <div class="rows" id="trainRows"></div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head"><h2>Contact</h2></div>
+    <div class="card">
+      <b>Farm Machinery and Postharvest Technology Division</b><br>
+      Bangladesh Rice Research Institute, Gazipur 1701, Bangladesh
+      <div class="links" id="links"></div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Md. Mahir Shahriyar</div></footer>
+
+<script>
+/* ============ EDIT HERE ============
+   Everything shown on the page comes from this object.
+   Leave a link empty ("") and it will not appear. */
+const DATA = {
+  name: "Md. Mahir Shahriyar",
+  photo: "",            // e.g. "assets/mahir.jpg" (put the file in the repo)
+  cvFile: "",           // e.g. "assets/Mahir_CV.pdf"
+  links: {
+    Email: "",          // e.g. "mahir@example.com"
+    LinkedIn: "",
+    ResearchGate: "",
+    "Google Scholar": "",
+    ORCID: "",
+    Facebook: ""
+  },
+  interests: ["Farm mechanization","Rice transplanting","Mechanical weeders","Solar powered machinery","Biomass and briquetting","Postharvest and milling","GIS and climate data"],
+  education: [
+    {y:"2015", t:"MS in Farm Structure and Environmental Engineering", s:"Bangladesh Agricultural University", d:"CGPA 3.13"},
+    {y:"2014", t:"B.Sc. in Agricultural Engineering", s:"Bangladesh Agricultural University", d:"CGPA 2.80"},
+    {y:"2008", t:"Higher Secondary Certificate (H.S.C)", s:"Dhaka Board", d:"GPA 5.00"},
+    {y:"2006", t:"Secondary School Certificate (S.S.C)", s:"Dhaka Board", d:"GPA 4.38"}
+  ],
+  projects: [
+    {y:"2021", r:"PI", t:"Design, development and performance evaluation of briquetting machine using rice husk with different ratios of maize stem"},
+    {y:"2020", r:"CI", t:"Attachment of binding facility in BRRI self-propelled reaper"},
+    {y:"2020", r:"CI", t:"Design and development of low-cost biochar production technology using different agricultural by-products"},
+    {y:"2021", r:"CI", t:"Development of mat type seedling using hydroponic technique"},
+    {y:"2020", r:"CI", t:"Design and development of a power operated straw rope maker"},
+    {y:"2021", r:"CI", t:"Design and development of a semi-automatic rice transplanter"},
+    {y:"2021", r:"CI", t:"Design and development of double row skid type power weeder for wetland paddy field"},
+    {y:"2021", r:"CI", t:"Determination of optimum seed rate for hybrid rice varieties for mechanical transplanting in Bangladesh"},
+    {y:"2022", r:"CI", t:"Identification and fabrication of fast-moving spare parts of combine harvester and rice transplanter for sustainable mechanization in Bangladesh"},
+    {y:"2022", r:"CI", t:"Design and development of single-row wetland power weeder"},
+    {y:"2022", r:"CI", t:"Design and development of a self-propelled multi-row power weeder for both wet and dry land conditions"},
+    {y:"",     r:"CI", t:"Performance evaluation of BRRI whole feed combine harvester (WCH 2021) under different soil conditions, crop conditions and seasons"},
+    {y:"2022", r:"PI", t:"Drying and tempering effect on kernel strength and milling recovery of parboiled and un-parboiled paddy"},
+    {y:"2023", r:"CI", t:"Design and development of solar power operated sprayer"},
+    {y:"2024", r:"CI", t:"Design and development of automated rodent trap for reducing postharvest losses of rice"},
+    {y:"2024", r:"CI", t:"Developing a high-resolution daily gridded precipitation and temperature data set for Bangladesh, 1961 to 2020"},
+    {y:"2024", r:"CI", t:"Assessing potential rice exposure to heat stress in Bangladesh under different SSPs"}
+  ],
+  technology: "Design and development of a power operated straw rope maker",
+  pubsIntl: [
+    "Energy potential of biomass from rice husks in Bangladesh: An experimental study for thermochemical and physical characterization",
+    "Design and development of a double-row weeder for rice field: Eco-friendly weed management",
+    "A GIS framework to demarcate suitable lands for combine harvesters using satellite DEM and physical properties of soil",
+    "Determination of optimum seed rate of hybrid rice (Oryza sativa L.) varieties in mat-type seedling raising for mechanical transplanting",
+    "Rice transplanting mechanization in Bangladesh: Way to make it sustainable",
+    "Development and assessment of cost-benefit parameters of solar PV powered paddy thresher",
+    "Design, fabrication, and performance evaluation of a multi-rows power operated weeder for line transplanted rice field in Bangladesh"
+  ],
+  pubsOther: [
+    "Design and development of solar power operated paddy thresher",
+    "Present status and drawback of selected agricultural machinery manufacturing workshops in Bangladesh: a survey-based case study"
+  ],
+  bulletins: "Two bulletins as co-author (Bengali).",
+  training: [
+    {y:"2024", t:"Modern Farm Mechanization", s:"National Agriculture Training Academy", d:"5 days"},
+    {y:"2022", t:"Operation of Haas CNC Machining Center and CNC Turning Center", s:"BLC Tool Room and Engineering Works", d:"5 days"},
+    {y:"2021-22", t:"Solidworks and CNC Programming with Mastercam", s:"Greenland Technology Limited", d:"3 months"},
+    {y:"2021", t:"Use of Modern Farm Machinery for Ensuring Food Security", s:"Bangladesh Agricultural Research Council", d:"3 days"},
+    {y:"2021", t:"Advanced Research Data Management Using RStudio", s:"Bangladesh Rice Research Institute", d:"6 days"},
+    {y:"2020", t:"Scientific Report Writing", s:"Bangladesh Rice Research Institute", d:"5 days"},
+    {y:"2020", t:"Research Methodology", s:"Graduate Training Institute (GTI)", d:"12 days"}
+  ]
+};
+/* ============ END EDIT ============ */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// photo and CV
+if (DATA.photo) $('portrait').innerHTML = '<img alt="Portrait of ' + esc(DATA.name) + '" src="' + esc(DATA.photo) + '">';
+if (DATA.cvFile) { const b = $('cvBtn'); b.href = DATA.cvFile; b.hidden = false; }
+
+// stats
+const pi = DATA.projects.filter(p => p.r === 'PI').length;
+const nPubs = DATA.pubsIntl.length + DATA.pubsOther.length;
+$('stats').innerHTML = [
+  [nPubs, 'Journal papers'],
+  [DATA.projects.length, 'Research programmes'],
+  [pi, 'As Principal Investigator'],
+  [DATA.training.length, 'Trainings completed']
+].map(x => '<div class="stat"><b>' + x[0] + '</b><small>' + x[1] + '</small></div>').join('');
+
+$('interests').innerHTML = DATA.interests.map(t => '<span class="tag">' + esc(t) + '</span>').join('');
+
+const row = (y, t, sub, badge) =>
+  '<div class="row"><div class="yr">' + esc(y || '') + '</div><div><h3>' + esc(t) + (badge || '') + '</h3>' + (sub ? '<p>' + esc(sub) + '</p>' : '') + '</div></div>';
+
+$('eduRows').innerHTML = DATA.education.map(e => row(e.y, e.t, e.s + ' | ' + e.d)).join('');
+$('trainRows').innerHTML = DATA.training.map(e => row(e.y, e.t, e.s + ' | ' + e.d)).join('');
+$('techTitle').textContent = DATA.technology;
+$('pubIntl').innerHTML = DATA.pubsIntl.map(p => '<li>' + esc(p) + '</li>').join('');
+$('pubOther').innerHTML = DATA.pubsOther.map(p => '<li>' + esc(p) + '</li>').join('');
+$('bulletins').textContent = DATA.bulletins;
+
+// projects with filter
+function drawProjects(f) {
+  const list = DATA.projects.filter(p => f === 'all' || p.r === f)
+    .sort((a, b) => (b.y || '0').localeCompare(a.y || '0'));
+  $('projRows').innerHTML = list.map(p =>
+    row(p.y, p.t, '', '<span class="badge ' + p.r.toLowerCase() + '">' + (p.r === 'PI' ? 'PI' : 'Co-I') + '</span>')).join('');
+}
+drawProjects('all');
+$('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  drawProjects(b.dataset.f);
+});
+
+// contact links
+const L = Object.entries(DATA.links).filter(([, v]) => v);
+$('links').innerHTML = L.length
+  ? L.map(([k, v]) => '<a class="btn ghost" target="_blank" rel="noopener" href="' + esc(k === 'Email' ? 'mailto:' + v : v) + '">' + esc(k) + '</a>').join('')
+  : '<span style="color:var(--muted)">Add your email and profile links in the DATA block of index.html.</span>';
+
+$('yr').textContent = new Date().getFullYear();
+
+// theme toggle
+try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+$('theme').onclick = () => {
+  const cur = document.documentElement.dataset.theme ||
+    (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch (e) {}
+};
+
+// active nav link
+const links = [...document.querySelectorAll('#menu a')];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+}), {rootMargin: '-40% 0px -55% 0px'});
+document.querySelectorAll('section').forEach(s => io.observe(s));
+</script>
+</body>
+</html>
